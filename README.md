@@ -1,5 +1,6 @@
 # Node.js로 AWS-SDK를 사용하여 S3 버킷에 json 파일 업로드 하기
 
+![1](https://user-images.githubusercontent.com/63000843/99182771-617ce300-277a-11eb-8456-b4d12f7daa24.PNG)
 ### 1번
 - **npm i aws-sdk** 를 터미널에서 실행하여 AWS 모듈을 사용하게 해줍니다.
 
