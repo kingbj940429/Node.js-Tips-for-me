@@ -70,15 +70,12 @@
 # 로컬에 있는 Json을 파일을 Async/Await를 사용하여 동기화 시켜서 업로드 하기
 ![3](https://user-images.githubusercontent.com/63000843/99182767-5fb31f80-277a-11eb-9e0a-2d8a37645a1c.PNG)
 
-# Node.js에서 파이썬 파일 실행하기 및 모듈화 하는 방법
-![4](https://user-images.githubusercontent.com/63000843/99182769-60e44c80-277a-11eb-9fd6-f2fc8e202b70.PNG)
-
 ### 1번
 - **.py** 에 보낼 옵션입니다.
 
 **scriptPath** : 실행될 파이썬의 위치
 
-**args** : 파이썬 파일에 전송한 인자
+**args** : 파이썬 파일에 전송한 인자, 배열 형식이다.
 
 ```python
 import sys
@@ -87,3 +84,22 @@ print sys.argv[0]
 이런식으로 py에 전달된다. 주의할점은 sys.argv[0]에는 경로가 들어가므로
 
 원하는 값은 **sys.argv[1]** 에 있다.
+
+### 2번
+- **PythonShell.run()** : 파이썬 파일을 실행하는 클래스이다.
+
+- **results** 에는 파이썬에서 print(출력) 했을 때의 값이 들어 있다.
+```python
+import sys
+print sys.argv[0]
+```
+라면 **sys.argv[0](배열에 들어가 있는 값이)** 이 출력된다.
+
+### 마지막 별표
+
+- **module.exports = {}** 해당 함수들이 있는 파일을 모듈화 시켜준다.
+
+
+
+# Node.js에서 파이썬 파일 실행하기 및 모듈화 하는 방법
+![4](https://user-images.githubusercontent.com/63000843/99182769-60e44c80-277a-11eb-9fd6-f2fc8e202b70.PNG)
