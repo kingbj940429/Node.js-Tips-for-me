@@ -10,15 +10,12 @@
 
 - **json_path = path.join(__dirname, "../")** 은 현재 디렉토리의 경로입니다. path npm을 사용해야 합니다.
 
-![2](https://user-images.githubusercontent.com/63000843/99182772-617ce300-277a-11eb-964b-e507420e9d0f.PNG)
 ### 2번
 - **AWS.config.loadFromPath** 에서 accessKey 사용을 위한 파일의 내용입니다.
 
-![3](https://user-images.githubusercontent.com/63000843/99182767-5fb31f80-277a-11eb-9e0a-2d8a37645a1c.PNG)
 ### 3번
 - 로컬에 있는 json 파일을 읽기위한 클래스입니다.
 
-![4](https://user-images.githubusercontent.com/63000843/99182769-60e44c80-277a-11eb-9fd6-f2fc8e202b70.PNG)
 ### 4번
 - S3 버킷에 필요한 정보를 입력해줍니다.
 
@@ -38,7 +35,10 @@
 - **4번** 에서 설정한 옵션으로 **s3.upload** 클래스로 인해 json 데이터가 업로드 됩니다.
 
 # Node.js로 AWS-SDK, Multer, Multer-s3를 사용하여 S3 버킷에 파일 업로드 하기
+![2](https://user-images.githubusercontent.com/63000843/99182772-617ce300-277a-11eb-964b-e507420e9d0f.PNG)
 
 # 로컬에 있는 Json을 파일을 Async/Await를 사용하여 동기화 시켜서 업로드 하기
+![3](https://user-images.githubusercontent.com/63000843/99182767-5fb31f80-277a-11eb-9e0a-2d8a37645a1c.PNG)
 
 # Node.js에서 파이썬 파일 실행하기 및 모듈화 하는 방법
+![4](https://user-images.githubusercontent.com/63000843/99182769-60e44c80-277a-11eb-9fd6-f2fc8e202b70.PNG)
