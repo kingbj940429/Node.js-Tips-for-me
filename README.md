@@ -56,8 +56,34 @@
 
 ![5](https://user-images.githubusercontent.com/63000843/99182905-6bebac80-277b-11eb-8743-d2b9aa798d7e.PNG)
 
+### 2번
+- **let upload** 는 s3에 올릴 파일에 대한 옵션 입니다.
+
+- **cb** 는 콜백함수입니다. 다른건 위에 json 보낼때와 유사합니다.
+
+- **router** 를 이용하기 위한 form태그 action을 해줍니다.
+
+- **upload.single("wavFile")** 인자는 input(tpye='file' name='wavFile) 입니다.
+
+(사진의 name=imgFile은 오타입니다. wavFile이 맞습니다.)
+
 # 로컬에 있는 Json을 파일을 Async/Await를 사용하여 동기화 시켜서 업로드 하기
 ![3](https://user-images.githubusercontent.com/63000843/99182767-5fb31f80-277a-11eb-9e0a-2d8a37645a1c.PNG)
 
 # Node.js에서 파이썬 파일 실행하기 및 모듈화 하는 방법
 ![4](https://user-images.githubusercontent.com/63000843/99182769-60e44c80-277a-11eb-9fd6-f2fc8e202b70.PNG)
+
+### 1번
+- **.py** 에 보낼 옵션입니다.
+
+**scriptPath** : 실행될 파이썬의 위치
+
+**args** : 파이썬 파일에 전송한 인자
+
+```python
+import sys
+print sys.argv[0] 
+```
+이런식으로 py에 전달된다. 주의할점은 sys.argv[0]에는 경로가 들어가므로
+
+원하는 값은 **sys.argv[1]** 에 있다.
