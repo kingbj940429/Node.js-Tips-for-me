@@ -37,6 +37,12 @@
 # Node.js로 AWS-SDK, Multer, Multer-s3를 사용하여 S3 버킷에 파일 업로드 하기
 ![2](https://user-images.githubusercontent.com/63000843/99182772-617ce300-277a-11eb-964b-e507420e9d0f.PNG)
 
+### 1번
+- **aws-sdk, multer, multer-s3** npm들을 터미널에서 설치해줍니다.
+- **AWS.config.loadFromPath** 로 accesskey가 있는 파일을 등록해줍니다.
+- **let s3 = new AWS.S3()** 는 s3 객체를 사용하게 해줍니다.
+- **awsconfig.json** 파일을 만들어 accesskey에 대한 정보를 입력해줍니다.
+
 # 로컬에 있는 Json을 파일을 Async/Await를 사용하여 동기화 시켜서 업로드 하기
 ![3](https://user-images.githubusercontent.com/63000843/99182767-5fb31f80-277a-11eb-9e0a-2d8a37645a1c.PNG)
 
