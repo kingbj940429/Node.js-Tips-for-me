@@ -68,6 +68,22 @@
 (사진의 name=imgFile은 오타입니다. wavFile이 맞습니다.)
 
 # 로컬에 있는 Json을 파일을 Async/Await를 사용하여 동기화 시켜서 업로드 하기
+![4](https://user-images.githubusercontent.com/63000843/99182769-60e44c80-277a-11eb-9fd6-f2fc8e202b70.PNG)
+
+### 1번
+
+- **const util = require('path')** : util은 내장모듈이고 promisify을 갖고 있습니다. 
+
+- **util.promisify(클래스.함수)** : 클래스에 있는 함수를 프로미스화 시켜줍니다.(동기식으로 사용하게 해줌)
+
+- 동기화 시킨 함수 **(async/await)** 를 사진과 같이 사용하면 됩니다.
+
+(꼭 해당 동기화 함수를 담고 있는 함수에 **async** 선언을 해주어야 합니다.)
+
+
+
+
+# Node.js에서 파이썬 파일 실행하기 및 모듈화 하는 방법
 ![3](https://user-images.githubusercontent.com/63000843/99182767-5fb31f80-277a-11eb-9e0a-2d8a37645a1c.PNG)
 
 ### 1번
@@ -83,10 +99,10 @@ print sys.argv[0]
 ```
 이런식으로 py에 전달된다. 주의할점은 sys.argv[0]에는 경로가 들어가므로
 
-원하는 값은 **sys.argv[1]** 에 있다.
+원하는 값은 **sys.argv[1]** 에 있습니다.
 
 ### 2번
-- **PythonShell.run()** : 파이썬 파일을 실행하는 클래스이다.
+- **PythonShell.run()** : 파이썬 파일을 실행하는 클래스입니다.
 
 - **results** 에는 파이썬에서 print(출력) 했을 때의 값이 들어 있다.
 ```python
@@ -99,7 +115,3 @@ print sys.argv[0]
 
 - **module.exports = {}** 해당 함수들이 있는 파일을 모듈화 시켜준다.
 
-
-
-# Node.js에서 파이썬 파일 실행하기 및 모듈화 하는 방법
-![4](https://user-images.githubusercontent.com/63000843/99182769-60e44c80-277a-11eb-9fd6-f2fc8e202b70.PNG)
