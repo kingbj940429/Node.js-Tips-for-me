@@ -1,3 +1,12 @@
+# 목차
+1) Node.js로 AWS-SDK를 사용하여 S3 버킷에 json 파일 업로드 하기
+
+2) Node.js로 AWS-SDK, Multer, Multer-s3를 사용하여 S3 버킷에 파일 업로드 하기
+
+3) 로컬에 있는 Json을 파일을 Async/Await를 사용하여 동기화 시켜서 업로드 하기
+
+4) Node.js에서 파이썬 파일 실행하기 및 모듈화 하는 방법
+
 # Node.js로 AWS-SDK를 사용하여 S3 버킷에 json 파일 업로드 하기
 
 ![1](https://user-images.githubusercontent.com/63000843/99182771-617ce300-277a-11eb-8456-b4d12f7daa24.PNG)
