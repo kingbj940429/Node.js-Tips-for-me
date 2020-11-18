@@ -119,6 +119,15 @@ print sys.argv[0]
 
 # connect-redis를 사용하여 세션 관리하기
 ### 들어가기전 미리 준비 할것
+1) redislabs 정보
+![redis3](https://user-images.githubusercontent.com/63000843/99532429-a35e9100-29e7-11eb-9bd5-f751aeab7bad.PNG)
+2) .env 파일
+![redis2](https://user-images.githubusercontent.com/63000843/99532432-a48fbe00-29e7-11eb-849c-704da87c0b94.PNG)
+### 사용하기
 ![redis](https://user-images.githubusercontent.com/63000843/99531973-e409da80-29e6-11eb-8a18-fdfa1f1cdde9.PNG)
 
+1) **npm i connect-redis@^3.0.0** 으로 꼭 3버전을 다운받으세요.
 
+여기서 알아둘 것은 redis는 express-session에 종속되어 있기 때문에 require뒤에 express-session을 해주어야 한다.
+
+2) session 안에 store라는 새로운 객체를 만들고 그림과 같이 설정해준다.
