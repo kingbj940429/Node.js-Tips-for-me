@@ -7,6 +7,8 @@
 
 4) Node.js에서 파이썬 파일 실행하기 및 모듈화 하는 방법
 
+5) connect-redis 를 사용하여 세션 관리하기
+
 # Node.js로 AWS-SDK를 사용하여 S3 버킷에 json 파일 업로드 하기
 
 ![1](https://user-images.githubusercontent.com/63000843/99182771-617ce300-277a-11eb-8456-b4d12f7daa24.PNG)
@@ -114,4 +116,9 @@ print sys.argv[0]
 ### 마지막 별표
 
 - **module.exports = {}** 해당 함수들이 있는 파일을 모듈화 시켜준다.
+
+# connect-redis를 사용하여 세션 관리하기
+### 들어가기전 미리 준비 할것
+![redis](https://user-images.githubusercontent.com/63000843/99531973-e409da80-29e6-11eb-8a18-fdfa1f1cdde9.PNG)
+
 
