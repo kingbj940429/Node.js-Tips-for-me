@@ -1,13 +1,13 @@
 # 목차
 1) [Node.js로 AWS-SDK를 사용하여 S3 버킷에 json 파일 업로드 하기](#1장)
 
-2) Node.js로 AWS-SDK, Multer, Multer-s3를 사용하여 S3 버킷에 파일 업로드 하기
+2) [Node.js로 AWS-SDK, Multer, Multer-s3를 사용하여 S3 버킷에 파일 업로드 하기](#2장)
 
-3) 로컬에 있는 Json을 파일을 Async/Await를 사용하여 동기화 시켜서 업로드 하기
+3) [로컬에 있는 Json을 파일을 Async/Await를 사용하여 동기화 시켜서 업로드 하기](#3장)
 
-4) Node.js에서 파이썬 파일 실행하기 및 모듈화 하는 방법
+4) [Node.js에서 파이썬 파일 실행하기 및 모듈화 하는 방법](#4장)
 
-5) connect-redis 를 사용하여 세션 관리하기
+5) [connect-redis 를 사용하여 세션 관리하기](#5장)
 
 # 1장
 ## Node.js로 AWS SDK를 사용하여 S3 버킷에 json 파일 업로드 하기
@@ -48,6 +48,7 @@
 ### 5번
 - **4번** 에서 설정한 옵션으로 **s3.upload** 클래스로 인해 json 데이터가 업로드 됩니다.
 
+# 2장
 # Node.js로 AWS-SDK, Multer, Multer-s3를 사용하여 S3 버킷에 파일 업로드 하기
 ![2](https://user-images.githubusercontent.com/63000843/99182772-617ce300-277a-11eb-964b-e507420e9d0f.PNG)
 
@@ -70,6 +71,7 @@
 
 (사진의 name=imgFile은 오타입니다. wavFile이 맞습니다.)
 
+# 3장
 # 로컬에 있는 Json을 파일을 Async/Await를 사용하여 동기화 시켜서 업로드 하기
 ![4](https://user-images.githubusercontent.com/63000843/99182769-60e44c80-277a-11eb-9fd6-f2fc8e202b70.PNG)
 
@@ -85,7 +87,7 @@
 
 
 
-
+# 4장
 # Node.js에서 파이썬 파일 실행하기 및 모듈화 하는 방법
 ![3](https://user-images.githubusercontent.com/63000843/99182767-5fb31f80-277a-11eb-9e0a-2d8a37645a1c.PNG)
 
@@ -118,6 +120,7 @@ print sys.argv[0]
 
 - **module.exports = {}** 해당 함수들이 있는 파일을 모듈화 시켜준다.
 
+# 5장
 # connect-redis를 사용하여 세션 관리하기
 ### 들어가기전 미리 준비 할것
 1) redislabs 정보
