@@ -1,5 +1,5 @@
 # 목차
-1) [Node.js로 AWS-SDK를 사용하여 S3 버킷에 json 파일 업로드 하기](#Node.js로-AWS-SDK를-사용하여-S3-버킷에-json-파일-업로드-하기)
+1) [Node.js로 AWS-SDK를 사용하여 S3 버킷에 json 파일 업로드 하기](#-Node.js로-AWS-SDK를-사용하여-S3-버킷에-json-파일-업로드-하기)
 
 2) Node.js로 AWS-SDK, Multer, Multer-s3를 사용하여 S3 버킷에 파일 업로드 하기
 
@@ -9,7 +9,7 @@
 
 5) connect-redis 를 사용하여 세션 관리하기
 
-# Node.js로 AWS-SDK를 사용하여 S3 버킷에 json 파일 업로드 하기
+# Node.js로 AWS SDK를 사용하여 S3 버킷에 json 파일 업로드 하기
 
 ![1](https://user-images.githubusercontent.com/63000843/99182771-617ce300-277a-11eb-8456-b4d12f7daa24.PNG)
 ### 1번
