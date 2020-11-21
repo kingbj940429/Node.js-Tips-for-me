@@ -50,6 +50,8 @@
 ### 5번
 - **4번** 에서 설정한 옵션으로 **s3.upload** 클래스로 인해 json 데이터가 업로드 됩니다.
 
+[목차로 가기](#목차)
+
 # 2장
 # Node.js로 AWS-SDK, Multer, Multer-s3를 사용하여 S3 버킷에 파일 업로드 하기
 ![2](https://user-images.githubusercontent.com/63000843/99182772-617ce300-277a-11eb-964b-e507420e9d0f.PNG)
@@ -73,6 +75,8 @@
 
 (사진의 name=imgFile은 오타입니다. wavFile이 맞습니다.)
 
+[목차로 가기](#목차)
+
 # 3장
 # 로컬에 있는 Json을 파일을 Async/Await를 사용하여 동기화 시켜서 업로드 하기
 ![4](https://user-images.githubusercontent.com/63000843/99182769-60e44c80-277a-11eb-9fd6-f2fc8e202b70.PNG)
@@ -87,7 +91,7 @@
 
 (꼭 해당 동기화 함수를 담고 있는 함수에 **async** 선언을 해주어야 합니다.)
 
-
+[목차로 가기](#목차)
 
 # 4장
 # Node.js에서 파이썬 파일 실행하기 및 모듈화 하는 방법
@@ -122,6 +126,8 @@ print sys.argv[0]
 
 - **module.exports = {}** 해당 함수들이 있는 파일을 모듈화 시켜준다.
 
+[목차로 가기](#목차)
+
 # 5장
 # connect-redis를 사용하여 세션 관리하기
 ### redis란?
@@ -155,6 +161,8 @@ Node.js 내 connect-redis는 redis를 사용한다면 세션을 보다 효율적
 
 2) session 안에 store라는 새로운 객체를 만들고 그림과 같이 설정해준다.
 
+[목차로 가기](#목차)
+
 # 6장
 # bcrypt로 비밀번호  하기
 ### bcrypt란? 
@@ -184,3 +192,4 @@ Node.js 내 connect-redis는 redis를 사용한다면 세션을 보다 효율적
 
 1) 위 이미지에서 hash 된 password를 가져와서 텍스트로 입력받은 비밀번호와 compare를 합니다. 같다면 true, 다르면 false를 반환합니다.
 
+[목차로 가기](#목차)
