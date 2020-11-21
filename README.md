@@ -124,8 +124,23 @@ print sys.argv[0]
 
 # 5장
 # connect-redis를 사용하여 세션 관리하기
-### 들어가기전 미리 준비 할것
+### redis란?
+
+REDIS(REmote Dictionary Server)는 메모리 기반의 “키-값” 구조 데이터 관리 시스템이며, 모든 데이터를 메모리에 저장하고 조회하기에 빠른 Read, Write 속도를 보장하는 비 관계형 데이터베이스입니다.
+
+레디스는 크게 5가지< String, Set, Sorted Set, Hash, List >의 데이터 형식을 지원합니다.
+Redis는 빠른 오픈 소스 인 메모리 키-값 데이터 구조 스토어이며, 다양한 인 메모리 데이터 구조 집합을 제공하므로 사용자 정의 애플리케이션을 손쉽게 생성할 수 있습니다.
+
+즉 Mysql(RDS), MongoDB(NoSQL)처럼 디스크가 아닌 메모리가 저장하므로 휘발성을 가집니다. 대신 속도가 빠릅니다.
+
+Node.js 내 connect-redis는 redis를 사용한다면 세션을 보다 효율적으로 관리할 수 있습니다.
+기존의 세션값을 redis서버로 분리되어집니다.
+이로써 여러개의 서버를 사용할 경우 세션값을 하나의 redis 서버로 통합하여 관리할 수 있습니다.
+
+### 준비 할 것
+
 1) redislabs 정보
+
 
 ![redis3](https://user-images.githubusercontent.com/63000843/99532429-a35e9100-29e7-11eb-9bd5-f751aeab7bad.PNG)
 2) .env 파일
