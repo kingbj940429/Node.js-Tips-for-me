@@ -155,7 +155,7 @@ print sys.argv[0]
 
 2) const bcrypt = require('bcrypt'); 로 불러옵니다.
   
-![bcrypt02](https://user-images.githubusercontent.com/63000843/99870821-5530d400-2c19-11eb-8f61-93e4de25cd46.PNG
+![bcrypt02](https://user-images.githubusercontent.com/63000843/99870821-5530d400-2c19-11eb-8f61-93e4de25cd46.PNG)
 
 1) 이미지는 async/await를 사용한 bcrypt 구문입니다. 두번째 "12"라는 인자 값이 바로 **Salt** 입니다.
 
