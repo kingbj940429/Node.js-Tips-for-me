@@ -9,7 +9,6 @@ const fs = require('fs');
 const AWS = require("aws-sdk");
 const multer = require('multer');
 const multerS3 = require('multer-s3');
-
 AWS.config.loadFromPath(__dirname + "/../config/awsconfig.json");
 let s3 = new AWS.S3();
 json_path = path.join(__dirname, "../");
@@ -21,7 +20,6 @@ json_path = path.join(__dirname, "../");
     "region": ""
   }
 */
-
 const func1 = () =>{
     fs.readFile(`${json_path}/reformat_json/reformat_ytn.json`, (err, data) => { // => json 파일경로 읽어줘야함
       if (err) throw err;
@@ -48,7 +46,6 @@ const func1 = () =>{
     });
   }
   func1(); // json 형식으로 s3에 올라가게됨
-
 module.exports = router;
 
 
