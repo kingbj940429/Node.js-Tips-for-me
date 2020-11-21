@@ -9,7 +9,7 @@
 
 5) [connect-redis 를 사용하여 세션 관리하기](#5장)
 
-6) [bcrypt로 비밀번호 암호화 하기](#6장)
+6) [bcrypt로 비밀번호 해싱 하기](#6장)
 
 # 1장
 ## Node.js로 AWS SDK를 사용하여 S3 버킷에 json 파일 업로드 하기
@@ -141,5 +141,27 @@ print sys.argv[0]
 2) session 안에 store라는 새로운 객체를 만들고 그림과 같이 설정해준다.
 
 # 6장
-# bcrypt로 비밀번호 암호화 하기
+# bcrypt로 비밀번호  하기
+* bcrypt란? 웹 페이지를 구현할 때 보안은 가장 기본적으로 수행되어야 할 요소입니다. 비밀번호를 텍스트 그대로 데이터 베이스에 저장해 관리하는 것은
+해커에게 대놓고 데이터를 주는 것과 다름 없습니다. 이를 방지하고자 비밀번호를 암호화 하는 것이 bcrypt 모듈입니다.
+
+  bcrypt는 단방향 해시 함수를 이용한 모듈로써 **Salt** 라는 개념을 사용합니다. Salt 라는 값과 해시된 비밀번호를 합쳐 데이터베이스에 저장하게 되는데
+  이렇게 하면, 만약 "1234" 같은 비밀번호를 해시함수에 넣었을때 항상 다른 값의 Salt 값과 비밀번호가 합쳐서 해커들이 비밀번호를 찾는데 있어
+  더욱 힘들게 만듭니다.
+
+* 사용 방법
+
+1) npm i bcrypt를 수행합니다.
+
+2) const bcrypt = require('bcrypt'); 로 불러옵니다.
+  
+![bcrypt02](https://user-images.githubusercontent.com/63000843/99870821-5530d400-2c19-11eb-8f61-93e4de25cd46.PNG
+
+1) 이미지는 async/await를 사용한 bcrypt 구문입니다. 두번째 "12"라는 인자 값이 바로 **Salt** 입니다.
+
+  다음과 수행하면 해쉬된 password값을 받을 수 있습니다.
+
+![bcrypt01](https://user-images.githubusercontent.com/63000843/99870822-56620100-2c19-11eb-85df-d696381c9759.PNG)
+
+1) 위 이미지에서 hash 된 password를 가져와서 텍스트로 입력받은 비밀번호와 compare를 합니다. 같다면 true, 다르면 false를 반환합니다.
 
