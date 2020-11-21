@@ -131,7 +131,7 @@ print sys.argv[0]
 2) .env 파일
 
 ![redis2](https://user-images.githubusercontent.com/63000843/99532432-a48fbe00-29e7-11eb-849c-704da87c0b94.PNG)
-### 사용하기
+### 사용 방법
 ![redis](https://user-images.githubusercontent.com/63000843/99531973-e409da80-29e6-11eb-8a18-fdfa1f1cdde9.PNG)
 
 1) **npm i connect-redis@^3.0.0** 으로 꼭 3버전을 다운받으세요.
@@ -142,19 +142,23 @@ print sys.argv[0]
 
 # 6장
 # bcrypt로 비밀번호  하기
-* bcrypt란? 웹 페이지를 구현할 때 보안은 가장 기본적으로 수행되어야 할 요소입니다. 비밀번호를 텍스트 그대로 데이터 베이스에 저장해 관리하는 것은
-해커에게 대놓고 데이터를 주는 것과 다름 없습니다. 이를 방지하고자 비밀번호를 암호화 하는 것이 bcrypt 모듈입니다.
+### bcrypt란? 
+
+  웹 페이지를 구현할 때 보안은 가장 기본적으로 수행되어야 할 요소입니다. 비밀번호를 텍스트 그대로 데이터 베이스에 저장해 관리하는 것은
+  해커에게 대놓고 데이터를 주는 것과 다름 없습니다. 이를 방지하고자 비밀번호를 암호화 하는 것이 bcrypt 모듈입니다.
 
   bcrypt는 단방향 해시 함수를 이용한 모듈로써 **Salt** 라는 개념을 사용합니다. Salt 라는 값과 해시된 비밀번호를 합쳐 데이터베이스에 저장하게 되는데
   이렇게 하면, 만약 "1234" 같은 비밀번호를 해시함수에 넣었을때 항상 다른 값의 Salt 값과 비밀번호가 합쳐서 해커들이 비밀번호를 찾는데 있어
   더욱 힘들게 만듭니다.
 
-* 사용 방법
+### 사용 방법
 
 1) npm i bcrypt를 수행합니다.
 
 2) const bcrypt = require('bcrypt'); 로 불러옵니다.
-  
+
+### 설명
+
 ![bcrypt02](https://user-images.githubusercontent.com/63000843/99870821-5530d400-2c19-11eb-8f61-93e4de25cd46.PNG)
 
 1) 이미지는 async/await를 사용한 bcrypt 구문입니다. 두번째 "12"라는 인자 값이 바로 **Salt** 입니다.
