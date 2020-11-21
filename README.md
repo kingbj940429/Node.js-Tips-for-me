@@ -9,6 +9,8 @@
 
 5) [connect-redis 를 사용하여 세션 관리하기](#5장)
 
+6) [bcrypt로 비밀번호 암호화 하기](#6장)
+
 # 1장
 ## Node.js로 AWS SDK를 사용하여 S3 버킷에 json 파일 업로드 하기
 
@@ -137,3 +139,7 @@ print sys.argv[0]
 여기서 알아둘 것은 redis는 express-session에 종속되어 있기 때문에 require뒤에 express-session을 해주어야 한다.
 
 2) session 안에 store라는 새로운 객체를 만들고 그림과 같이 설정해준다.
+
+# 6장
+# bcrypt로 비밀번호 암호화 하기
+
